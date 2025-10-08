@@ -739,7 +739,7 @@ footer {
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
-        font-size: 12px;
+        font-size: 11px;
     }
 
     nav {
@@ -807,89 +807,92 @@ footer {
     }
 
     .profile-banner {
-        height: 100px;
+        height: 85px;
     }
 
     .profile-info {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0 12px 14px 12px;
+        flex-direction: row;
+        gap: 8px;
+        padding: 0 10px 12px 10px;
+        align-items: flex-start;
     }
 
-    .profile-left,
+    .profile-left {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 50%;
+    }
+
     .profile-right {
         flex: 1;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .profile-right {
-        padding-top: 0;
+        width: auto;
+        max-width: 50%;
+        padding-top: 35px;
     }
 
     .profile-photo-container {
-        width: 80px;
-        margin-top: -40px;
+        width: 70px;
+        margin-top: -35px;
     }
 
     .profile-photo {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         border: 3px solid #ffffff;
     }
 
     .profile-photo-placeholder {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .profile-name {
-        font-size: 18px;
-        margin-top: 8px;
+        font-size: 16px;
+        margin-top: 6px;
     }
 
     .profile-headline {
-        font-size: 13px;
+        font-size: 11px;
         line-height: 1.3;
-        margin-top: 4px;
+        margin-top: 3px;
     }
 
     .profile-location {
-        font-size: 11px;
-        margin-top: 6px;
+        font-size: 10px;
+        margin-top: 4px;
     }
 
     .profile-contact {
         flex-direction: column;
-        gap: 6px;
-        margin-top: 10px;
+        gap: 5px;
+        margin-top: 8px;
     }
 
     .contact-btn {
         width: 100%;
         text-align: center;
-        padding: 9px 14px;
-        font-size: 12px;
+        padding: 7px 10px;
+        font-size: 10px;
     }
 
     .stats-row {
-        gap: 6px;
+        gap: 5px;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     .stat-item {
         min-width: 100%;
         width: 100%;
         text-align: left;
-        padding: 8px 12px;
+        padding: 6px 8px;
     }
 
     .stat-number {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .stat-label {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .section-header {
@@ -897,32 +900,32 @@ footer {
     }
 
     .section-title {
-        font-size: 15px;
-        padding: 6px 12px;
+        font-size: 14px;
+        padding: 5px 10px;
     }
 
     .section-content {
-        padding: 12px;
-    }
-
-    .skills-grid, .cert-grid {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-    .skill-item, .cert-card {
         padding: 10px;
     }
 
+    .skills-grid, .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .skill-item, .cert-card {
+        padding: 8px;
+    }
+
     .skill-title {
-        font-size: 14px;
-        margin-bottom: 6px;
-        padding-bottom: 6px;
+        font-size: 12px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
     }
 
     .skill-list {
-        font-size: 12px;
-        line-height: 1.5;
+        font-size: 10px;
+        line-height: 1.4;
     }
 
     .experience-item {
@@ -936,88 +939,88 @@ footer {
     }
 
     .experience-logo, .education-logo {
-        width: 38px;
-        height: 38px;
-        font-size: 15px;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
     }
 
     .experience-title {
-        font-size: 14px;
-        padding: 5px 10px;
-        margin-bottom: 5px;
+        font-size: 13px;
+        padding: 4px 9px;
+        margin-bottom: 4px;
     }
 
     .experience-company {
-        font-size: 13px;
-        margin-bottom: 3px;
-    }
-
-    .experience-date, .experience-location {
         font-size: 11px;
         margin-bottom: 2px;
     }
 
+    .experience-date, .experience-location {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+
     .experience-description {
-        font-size: 12px;
-        line-height: 1.5;
-        margin-top: 6px;
+        font-size: 11px;
+        line-height: 1.4;
+        margin-top: 5px;
     }
 
     .experience-description ul {
-        margin-left: 14px;
-        margin-top: 5px;
+        margin-left: 12px;
+        margin-top: 4px;
     }
 
     .experience-description li {
-        margin: 3px 0;
+        margin: 2px 0;
     }
 
     .cert-icon {
-        width: 42px;
-        height: 42px;
-        font-size: 22px;
-        margin-bottom: 10px;
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+        margin-bottom: 8px;
     }
 
     .cert-title {
-        font-size: 14px;
-        margin-bottom: 5px;
+        font-size: 12px;
+        margin-bottom: 4px;
     }
 
     .cert-org, .cert-year {
-        font-size: 12px;
-        margin-bottom: 5px;
+        font-size: 10px;
+        margin-bottom: 4px;
     }
 
     .cert-description {
-        font-size: 12px;
-        margin-bottom: 8px;
-        line-height: 1.5;
+        font-size: 10px;
+        margin-bottom: 6px;
+        line-height: 1.4;
     }
 
     .cert-badge {
-        font-size: 10px;
-        padding: 3px 8px;
-        margin-top: 6px;
+        font-size: 9px;
+        padding: 3px 6px;
+        margin-top: 5px;
     }
 
     .about-text {
-        font-size: 12px;
-        line-height: 1.6;
+        font-size: 11px;
+        line-height: 1.5;
     }
 
     .highlight-box {
-        padding: 10px;
-        margin: 10px 0;
+        padding: 8px;
+        margin: 8px 0;
     }
 
     .highlight-box strong {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .highlight-box p {
-        font-size: 12px;
-        margin-top: 5px;
+        font-size: 10px;
+        margin-top: 4px;
     }
 
     footer {
@@ -1065,12 +1068,12 @@ footer {
 
     /* Ajustements généraux */
     h3 {
-        font-size: 16px;
-        margin-bottom: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .cert-grid, .skills-grid {
-        margin-top: 12px;
+        margin-top: 10px;
     }
 
     .cert-card::before {
@@ -1079,5 +1082,25 @@ footer {
 
     .skill-item:hover, .cert-card:hover {
         transform: none;
+    }
+
+    /* Optimisation pour 2 colonnes */
+    .profile-info {
+        display: flex !important;
+    }
+    
+    @media (max-width: 380px) {
+        .skills-grid, .cert-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .profile-info {
+            flex-direction: column !important;
+        }
+        
+        .profile-left, .profile-right {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
     }
 }
