@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Haykel Yazidi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">Haykel Yazidi</div>
+            <ul>
+                <li><a href="index.html" class="nav-link">
+                    <span class="nav-icon">👤</span>
+                    <span>Profil</span>
+                </a></li>
+                <li><a href="experience.html" class="nav-link">
+                    <span class="nav-icon">💼</span>
+                    <span>Expérience</span>
+                </a></li>
+                <li><a href="competences.html" class="nav-link">
+                    <span class="nav-icon">⚡</span>
+                    <span>Compétences</span>
+                </a></li>
+                <li><a href="formations.html" class="nav-link">
+                    <span class="nav-icon">🎓</span>
+                    <span>Formation</span>
+                </a></li>
+                <li><a href="contact.html" class="nav-link active">
+                    <span class="nav-icon">✉️</span>
+                    <span>Contact</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="section-header">
+                <h2 class="section-title">Me Contacter</h2>
+            </div>
+            <div class="section-content">
+                <p style="font-size: 16px; color: rgba(0, 0, 0, 0.8); margin-bottom: 30px; text-align: center;">
+                    N'hésitez pas à me contacter pour discuter d'opportunités professionnelles, de collaborations ou simplement pour échanger sur les technologies DevOps et Cloud.
+                </p>
+
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/mwprnvow" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <input type="text" id="subject" name="_subject" placeholder="Objet de votre message" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
+                        </div>
+
+                        <!-- Champ anti-spam caché -->
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                        
+                        <p style="margin-top: 15px; font-size: 13px; color: rgba(0, 0, 0, 0.6); text-align: center;">
+                            ✅ Votre message sera envoyé directement à mon adresse email
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-header">
+                <h2 class="section-title"><span>Informations de Contact</span></h2>
+            </div>
+            <div class="section-content">
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">📧</div>
+                        <div class="cert-title">Email</div>
+                        <div class="cert-description">
+                            <a href="mailto:Haykel.yazidi@gmail.com" style="color: #2c5f8d; text-decoration: none; font-weight: 600;">
+                                Haykel.yazidi@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">📱</div>
+                        <div class="cert-title">Téléphone</div>
+                        <div class="cert-description">
+                            <a href="tel:0759817516" style="color: #2c5f8d; text-decoration: none; font-weight: 600;">
+                                07 59 81 75 16
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">📍</div>
+                        <div class="cert-title">Localisation</div>
+                        <div class="cert-description">
+                            91 Bis Rue Bocicaut<br>
+                            Fontenay aux Roses, 92260<br>
+                            Île-de-France, France
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">💼</div>
+                        <div class="cert-title">LinkedIn</div>
+                        <div class="cert-description">
+                            <a href="https://www.linkedin.com/in/haykel-yazidi-b44692173/" target="_blank" style="color: #2c5f8d; text-decoration: none; font-weight: 600;">
+                                linkedin.com/in/haykel-yazidi
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🌐</div>
+                        <div class="cert-title">Disponibilité</div>
+                        <div class="cert-description">
+                            Actuellement en mission<br>
+                            Ouvert aux opportunités<br>
+                            Freelance & CDI
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🎯</div>
+                        <div class="cert-title">Zones d'intervention</div>
+                        <div class="cert-description">
+                            Île-de-France<br>
+                            Remote possible<br>
+                            Déplacements France
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-header">
+                <h2 class="section-title">Expertises Recherchées</h2>
+            </div>
+            <div class="section-content">
+                <div class="highlight-box">
+                    <strong style="font-size: 16px; color: #2c5f8d;">💼 Types de Missions</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                        <li><strong>Transformation DevOps :</strong> Accompagnement dans la mise en place de pratiques DevOps</li>
+                        <li><strong>Architecture Cloud :</strong> Conception et migration vers AWS, Azure ou OCI</li>
+                        <li><strong>Conteneurisation :</strong> Migration vers Docker/Kubernetes/OpenShift</li>
+                        <li><strong>CI/CD :</strong> Mise en place de pipelines d'intégration et déploiement continus</li>
+                        <li><strong>Infrastructure as Code :</strong> Automatisation avec Terraform, Ansible</li>
+                        <li><strong>Administration Bases de Données :</strong> Oracle, MariaDB, MySQL en HA</li>
+                        <li><strong>Tech Lead :</strong> Encadrement technique d'équipes DevOps</li>
+                        <li><strong>Audit & Optimisation :</strong> Infrastructure, performances, sécurité</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <strong style="font-size: 16px; color: #2c5f8d;">🎓 Formation & Coaching</strong>
+                    <p style="margin-top: 10px; line-height: 1.8;">
+                        Je propose également des sessions de formation sur les technologies DevOps :
+                        Docker, Kubernetes, GitLab-CI, Terraform, AWS, et accompagnement des équipes dans leur transformation DevOps.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-header">
+                <h2 class="section-title">Liens Rapides</h2>
+            </div>
+            <div class="section-content">
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+                    <a href="index.html" class="contact-btn">📄 Voir mon profil</a>
+                    <a href="experience.html" class="contact-btn">💼 Mon expérience</a>
+                    <a href="competences.html" class="contact-btn">⚡ Mes compétences</a>
+                    <a href="formations.html" class="contact-btn">🎓 Mes certifications</a>
+                    <a href="https://www.linkedin.com/in/haykel-yazidi-b44692173/" target="_blank" class="contact-btn primary">🔗 LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Haykel Yazidi - Tous droits réservés</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/haykel-yazidi-b44692173/" target="_blank">LinkedIn</a>
+                <a href="mailto:Haykel.yazidi@gmail.com">Email</a>
+                <a href="tel:0759817516">Téléphone</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
