@@ -155,12 +155,16 @@ nav a.nav-link.active {
 }
 
 .profile-left {
-    flex: 1;
+    flex: 0 0 auto;
+    max-width: 450px;
 }
 
 .profile-right {
     flex: 1;
     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .profile-photo-container {
@@ -224,14 +228,15 @@ nav a.nav-link.active {
 }
 
 .profile-contact {
-    margin-top: 20px;
+    margin-top: 0;
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .contact-btn {
-    padding: 10px 20px;
+    padding: 12px 28px;
     border-radius: 24px;
     border: 2px solid #4a9eff;
     background: white;
@@ -242,6 +247,7 @@ nav a.nav-link.active {
     transition: all 0.3s;
     text-decoration: none;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .contact-btn:hover {
@@ -593,19 +599,22 @@ nav a.nav-link.active {
 /* STATS */
 .stats-row {
     display: flex;
-    gap: 32px;
-    padding: 20px 0;
+    gap: 16px;
+    padding: 0;
     flex-wrap: wrap;
-    margin-top: 16px;
-    border-top: 2px solid #e8f4ff;
+    margin-top: 0;
+    border-top: none;
+    justify-content: flex-start;
 }
 
 .stat-item {
     font-size: 15px;
-    padding: 12px 20px;
+    padding: 16px 24px;
     background: linear-gradient(135deg, #e8f4ff 0%, #f8fbff 100%);
     border-radius: 8px;
     border-left: 4px solid #4a9eff;
+    flex: 1;
+    min-width: 200px;
 }
 
 .stat-number {
@@ -726,13 +735,41 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+        min-height: auto;
+    }
+
+    .nav-logo {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
     }
 
     nav ul {
         margin-left: 0;
         width: 100%;
         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    nav a.nav-link {
+        padding: 12px 8px;
+        font-size: 11px;
+        min-height: 60px;
+        flex: 1;
+        min-width: 80px;
+    }
+
+    .nav-icon {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .container {
+        margin: 16px auto;
+        padding: 0 12px;
     }
 
     .profile-banner {
@@ -742,12 +779,18 @@ footer {
     .profile-info {
         flex-direction: column;
         gap: 20px;
+        padding: 0 20px 24px 20px;
     }
 
     .profile-left,
     .profile-right {
         flex: 1;
         width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-right {
+        padding-top: 0;
     }
 
     .profile-photo-container {
@@ -758,6 +801,7 @@ footer {
     .profile-photo {
         width: 120px;
         height: 120px;
+        border: 4px solid #ffffff;
     }
 
     .profile-photo-placeholder {
@@ -765,34 +809,125 @@ footer {
     }
 
     .profile-name {
-        font-size: 22px;
+        font-size: 24px;
+        margin-top: 16px;
     }
 
-    .profile-right {
-        padding-top: 0;
+    .profile-headline {
+        font-size: 16px;
+    }
+
+    .profile-location {
+        font-size: 14px;
+    }
+
+    .profile-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .stats-row {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .stat-item {
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-header {
+        padding: 16px 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        padding: 10px 20px;
     }
 
     .section-content {
         padding: 20px;
     }
 
-    .section-header {
-        padding: 20px;
-    }
-
     .skills-grid, .cert-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
-    .stats-row {
-        gap: 16px;
+    .skill-item, .cert-card {
+        padding: 16px;
     }
 
     .experience-item {
         flex-direction: column;
+        gap: 12px;
+        padding: 16px 0;
     }
 
     .experience-item::before {
         display: none;
+    }
+
+    .experience-logo, .education-logo {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .experience-title {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .experience-company {
+        font-size: 15px;
+    }
+
+    .experience-date, .experience-location {
+        font-size: 14px;
+    }
+
+    .experience-description {
+        font-size: 14px;
+    }
+
+    .cert-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+    }
+
+    .cert-title {
+        font-size: 16px;
+    }
+
+    .cert-org, .cert-year {
+        font-size: 14px;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+
+    .highlight-box {
+        padding: 16px;
+        margin: 16px 0;
+    }
+
+    footer {
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
     }
 }
