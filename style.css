@@ -1,4 +1,28 @@
-/* STYLE CSS POUR LE PORTFOLIO */
+    /* Ajustements généraux */
+    h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .cert-grid, .skills-grid {
+        margin-top: 10px;
+    }
+
+    .cert-card::before {
+        height: 3px;
+    }
+
+    .skill-item:hover, .cert-card:hover {
+        transform: none;
+    }
+
+    /* Optimisation 2 colonnes pour petits écrans */
+    @media (max-width: 380px) {
+        .skills-grid, .cert-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}/* STYLE CSS POUR LE PORTFOLIO */
 
 * {
     margin: 0;
@@ -820,14 +844,14 @@ footer {
     .profile-left {
         flex: 0 0 auto;
         width: auto;
-        max-width: 50%;
+        max-width: 48%;
     }
 
     .profile-right {
         flex: 1;
         width: auto;
-        max-width: 50%;
-        padding-top: 35px;
+        max-width: 52%;
+        padding-top: 30px;
     }
 
     .profile-photo-container {
@@ -864,7 +888,7 @@ footer {
     .profile-contact {
         flex-direction: column;
         gap: 5px;
-        margin-top: 8px;
+        margin-top: 0px;
     }
 
     .contact-btn {
@@ -1084,23 +1108,22 @@ footer {
         transform: none;
     }
 
-    /* Optimisation pour 2 colonnes */
-    .profile-info {
-        display: flex !important;
-    }
-    
+    /* Retour à 1 colonne sur très petits écrans */
     @media (max-width: 380px) {
         .skills-grid, .cert-grid {
             grid-template-columns: 1fr;
         }
         
         .profile-info {
-            flex-direction: column !important;
+            flex-direction: column;
         }
         
         .profile-left, .profile-right {
-            max-width: 100% !important;
-            width: 100% !important;
+            max-width: 100%;
+        }
+        
+        .profile-right {
+            padding-top: 0;
         }
     }
 }
